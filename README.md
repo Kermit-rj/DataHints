@@ -1,5 +1,6 @@
 # DataHints
 The hints record some experience when I process data.
+**认识你的数据**
 ## 数据预处理
 在正式处理数据之前，一定一定要先进行预处理，不能盲目实现需求。
 + 了解数据的结构
@@ -8,6 +9,7 @@ The hints record some experience when I process data.
   + 返回每个变量的数据类型
   + 做描述性统计
 + 做清洗，包括去重复值以及去空值（可能也需要考虑填补空值），分别统计重复值以及空值的数量
+  + 清洗时可以使用新的dataframe进行存储，不对原始数据进行修改
 ```python
   df[df[''].isna()]
   df.dropna(subset=[''])
