@@ -12,7 +12,10 @@ The hints record some experience when I process data.
   df[df[''].isna()]
   df.dropna(subset=[''])
   df.duplicated(subset=[''],
-                # keep=False)
+                # keep=False    # 加入该参数可以保留第一次出现的项
+              )
+  df.drop_duplicates(subset=[''])
 ```
 ## 数据处理
-+ 实习数据的
++ 实现数据处理的公式化，尤其是需要处理很多类似的数据（比如不同年份的数据）
++ 多输出数据，不要占用内存，程序重启之后不用重复之前的操作
