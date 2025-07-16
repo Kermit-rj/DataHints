@@ -9,7 +9,10 @@ The hints record some experience when I process data.
   + 做描述性统计
 + 做清洗，包括去重复值以及去空值（可能也需要考虑填补空值），分别统计重复值以及空值的数量
 ```python
+  df[df[''].isna()]
   df.dropna(subset=[''])
+  df.duplicated(subset=[''],
+                # keep=False)
 ```
 ## 数据处理
 + 实习数据的
